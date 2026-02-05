@@ -188,10 +188,18 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .category-inner .categories-scroll {
   padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .category-left {
@@ -228,6 +236,7 @@ body {
   margin-left: auto;
   display: flex;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 .category-tag {
@@ -579,8 +588,28 @@ body {
 
   .category-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 10px;
+  }
+
+  .category-left,
+  .categories-scroll,
+  .category-actions {
+    width: 100%;
+  }
+
+  .category-left {
+    order: 1;
+  }
+
+  .categories-scroll {
+    order: 2;
+  }
+
+  .category-actions {
+    order: 3;
+    margin-left: 0;
+    justify-content: flex-start;
   }
 
   .brand-popover {
