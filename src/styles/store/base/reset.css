@@ -10,6 +10,10 @@
 
 html {
     scroll-behavior: smooth;
+    color-scheme: light;
+    background-color: var(--color-gray-100);
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {

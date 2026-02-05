@@ -1,5 +1,6 @@
 :root {
   --font-family: 'Montserrat', 'Inter', sans-serif;
+  color-scheme: light;
   --color-primary: #f2c200;
   --color-primary-light: #f7d861;
   --color-primary-dark: #c79c00;

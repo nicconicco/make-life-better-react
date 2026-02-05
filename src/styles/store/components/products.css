@@ -194,6 +194,7 @@
 
     .filter-options {
         width: 100%;
+        flex-direction: column;
     }
 
     .filter-options select {
